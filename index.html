@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo-img1.png " class="logo">
+                <ul id="sideMenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li> <a href="#Projects">Projects</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <i class="fa-regular fa-circle-xmark " id="fas" onclick="Closemenu()"></i>
+                </ul>
+                <i class=" fa-solid fa-bars fas" id="fas" onclick="Openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi , I'm <span>Rohan</span> Talware <br>
+                    From India(Maharashtra). </h1>
+                
+            </div>
+        </div>
+    </div>
+    <!-- ******************about**************** -->
+    <div id="about">
+        <div class="container">
+            <div id="row">
+                <div class="about-colm-1">
+                    <img src="Userimg (3).jpg">
+                </div>
+                <div class="about-colm-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p> A passionate and detail-oriented web developer with a strong foundation in HTML, CSS, JavaScript, and modern web technologies. Eager to apply problem-solving skills and creativity to build responsive, user-friendly websites. Recently completed hands-on projects and coursework, focusing on front-end development. and web optimization. Committed to continuous learning and growth in the tech field.
+
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')" >Skills</p>
+                        <p class="tab-links"onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links"onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills" >
+                        <ul>
+                            <li>Python Programming</li>
+                            <li><span>Web development</span><br>HTML,CSS,JS</li>
+                            <li><span>Data Analytics</span><br>Numpy,Pandas</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li style="font-size: 25px; font-weight: 600; color: #b54769;">Fresher</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2014</span><br>SSC (72%) from State Board</li>
+                            <li><span>2016</span><br>HSC (64%) from State Board</li>
+                            <li><span>2021</span><br>Diploma In E&TC (78%) from MSBTE</li>
+                            <li><span>2024</span><br>B.Tech In E&TC (8.0 CGPA) From DBATU</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- *******************Project************** -->
+    <div id="Projects">
+        <div class="container">
+            <h1 class="subtitle">My Project</h1>
+            <div class="project-name">
+                <ul>
+                    <li>
+                        <h1>Clone Of Amazon Website</h1>
+                    </li>
+                </ul>
+            </div>
+            <div class="project-list">
+                <div class="project">
+                    <img src="project-img3.jpg">
+                    <div class="layer">
+                        <h3>Navbar & Hero Section</h3>
+                        <p> In this navbar we are added the amazon logo,location ,Serach input ,Login section and cart.Hero section is represent displaying the advertiesment or offer on the amazon website</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="project-img2.jpg">
+                    <div class="layer">
+                        <h3>Shop Section</h3>
+                        <p> In this Shop section we are added the different types of shopping option.</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="project-img1.jpg">
+                    <div class="layer">
+                        <h3>Foot-panel & Copyright</h3>
+                        <p> The foot panel is helping the know about us and contact or any type of help related Amazon.and copyright added in this section</p>
+                    </div>
+                </div>
+            </div>
+        </div>    
+
+        <!-- ****************Resume*********** -->
+       <div id="resume">
+        <div class="Resume">
+            <button><a href="https://drive.google.com/file/d/1DuLR3MPfH4MxuYKDlrM4RmCfXEFM47AT/view?usp=drive_link">Download Resume</a></button>
+        </div>
+       </div>
+    </div>
+    <!-- ***********Contact********* -->
+     <div id="contact">
+        <div class="container">
+            <div id="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i><i class="fa-solid fa-paper-plane"></i></i> rohantalware123@gmail.com</p>
+                    <p><i><i class="fa-solid fa-square-phone-flip"></i></i> 7263043484</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/" class="Ig"><i class="fa-brands fa-instagram" ></i></a>
+                        <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_nav-header-signin" class="Linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/onthisday/?source=bookmark" class="fb"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="contact-Right">
+                    <form action="https://api.web3forms.com/submit" method="POST" class="submit-to-google-sheet">
+                        <input type="hidden" name="access_key" value="b5e11ba0-1c7d-4459-8912-b5cf75136954">
+                        <input type="text" name="Name" placeholder="Your Name"required>
+                        <input type="email" name="Email" placeholder="Your Email"required>
+                        <textarea name="Message" rows="5" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+                >
+            </div>
+        </div>
+     </div>
+     <!-- copyright************** -->
+      <div class="copyright">
+        <p>Copyright &#169 Rohan.Made with <i class="fa-solid fa-heart"></i> By Self Learning</p>
+      </div>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <!-- <script>
+        var sideMen=document.getElementById("sideMenu");
+        
+        function Openmenu(){
+            sideMenu.style.right="0"
+        }
+        function Closemenu(){
+            sideMenu.style.right="-200px"
+        }
+    </script>
+    <script>
+        const scriptURL ='https://script.google.com/macros/s/AKfycbyw_uFNs2t7DC_zCIGEDCUGjNf6f5s6pRNafHmUMVtknXRykm3vWNOhmtOnXX9qEptQ3Q/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL,{method:'POST',body:new FormData(form)})
+            .then(response => console.log('success!',response))
+            .catch(error => console.error('Error!',error.message))
+        })
+    </script> -->
+</body>
+</html>
