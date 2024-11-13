@@ -7,18 +7,18 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
+<body class="body">
     <div id="header">
         <div class="container">
             <nav>
-                <img src="logo-img1.png " class="logo">
+                <img src="./image/logo-img1.png" class="logo">
                 <ul id="sideMenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li> <a href="#Projects">Projects</a></li>
-                    <li><a href="#resume">Resume</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
+                    <li class="list"><a href="#header">Home</a></li>
+                    <li class="list"><a href="#about">About</a></li>
+                    <li class="list"><a href="#skills">Skills</a></li>
+                    <li class="list"> <a href="#Projects">Projects</a></li>
+                    <li class="list"><a href="#resume">Resume</a></li>
+                    <li class="list"><a href="#contact">Contact Us</a></li>
                     <i class="fa-regular fa-circle-xmark " id="fas" onclick="Closemenu()"></i>
                 </ul>
                 <i class=" fa-solid fa-bars fas" id="fas" onclick="Openmenu()"></i>
@@ -36,7 +36,7 @@
         <div class="container">
             <div id="row">
                 <div class="about-colm-1">
-                    <img src="Userimg (3).jpg">
+                    <img src="./image/Userimg (3).jpg ">
                 </div>
                 <div class="about-colm-2">
                     <h1 class="subtitle">About Me</h1>
@@ -87,21 +87,21 @@
             </div>
             <div class="project-list">
                 <div class="project">
-                    <img src="project-img3.jpg">
+                    <img src="./image/project-img3.jpg">
                     <div class="layer">
                         <h3>Navbar & Hero Section</h3>
                         <p> In this navbar we are added the amazon logo,location ,Serach input ,Login section and cart.Hero section is represent displaying the advertiesment or offer on the amazon website</p>
                     </div>
                 </div>
                 <div class="project">
-                    <img src="project-img2.jpg">
+                    <img src="./image/project-img2.jpg">
                     <div class="layer">
                         <h3>Shop Section</h3>
                         <p> In this Shop section we are added the different types of shopping option.</p>
                     </div>
                 </div>
                 <div class="project">
-                    <img src="project-img1.jpg">
+                    <img src="./image/project-img1.jpg">
                     <div class="layer">
                         <h3>Foot-panel & Copyright</h3>
                         <p> The foot panel is helping the know about us and contact or any type of help related Amazon.and copyright added in this section</p>
@@ -164,7 +164,7 @@
             document.getElementById(tabname).classList.add("active-tab");
         }
     </script>
-    <!-- <script>
+     <script>
         var sideMen=document.getElementById("sideMenu");
         
         function Openmenu(){
