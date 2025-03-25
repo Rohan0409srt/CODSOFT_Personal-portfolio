@@ -231,7 +231,7 @@ nav ul li a:hover::after{
     width: 180px;
     height: 100px;
     border-radius: 30px;
-    transition: backgroun-color 0.5s;
+    transition: background-color 0.5s;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -335,26 +335,53 @@ form input,form textarea{
 #fas{
     display: none;
 }
-@media only Screen and (max-width:1420px) {
-    .body{
-        min-width: 600px;
+@media only screen and (max-width: 600px) {
+    body {
+        min-width: 100%;
     }
-    .logo{
-        background-image: url(./image/phone-img2.jpg);
+
+    .container {
+        padding: 10px 5%;
+    }
+
+    /* Ensure the header takes the right height */
+    #header {
+        background-image: url(./image/responsive_img.jpg);
         background-size: cover;
+        background-position: center top;
+        height: 100vh;
+        min-height: 100vh;
     }
-    .header-text p{
-        margin-top: 70%;
-        font-size: 26px;
+
+    .header-text {
+        margin-top: 170%;
+        font-size: 28px;
+        text-align: center;
+        padding: 0 10px;
     }
-    .header-text h1{
-        font-size: 30px;
+
+    .header-text h1 {
+        font-size: 32px;
+        margin-top: 15px;
     }
-    #fas{
+
+    .header-text p {
+        font-size: 20px;
+        margin-top: 15px;
+    }
+
+    /* Hamburger menu styles */
+    #fas {
         display: block;
-        font-size: 25px;
+        font-size: 28px;
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        cursor: pointer;
+        color: #fff;
     }
-    #sideMenu{
+
+    #sideMenu {
         background: #ff004f;
         position: fixed;
         top: 0;
@@ -363,59 +390,58 @@ form input,form textarea{
         height: 100vh;
         padding-top: 50px;
         z-index: 2;
-
-        
-
+        transition: right 0.5s;
     }
-    nav ul li{
+
+    nav ul li {
         display: block;
         margin: 25px;
     }
-    #fas{
-        position: absolute;
-        top: 25px;
-        right: 25px;
-        cursor: pointer;
-       
+
+    .subtitle {
+        font-size: 36px;
     }
-    .subtitle{
-        font-size: 40px;
-    }
-    .about-colm-1 , .about-colm-2{
+
+    .about-colm-1,
+    .about-colm-2 {
         flex-basis: 100%;
     }
-    .about-colm-1{
+
+    .about-colm-1 {
         margin-bottom: 30px;
     }
-    .about-colm-2{
-        font-size: 25px;
-    }
-    .tab-links{
+
+    .tab-links {
         font-size: 17px;
         margin-right: 20px;
     }
-    .Resume{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-   .Resume button {
-        margin-left: 0;
-        width: 160px;
-        display: flex;
-        align-items: center;
-        padding: 0;
-        justify-content: center;
 
+    .Resume {
+        justify-content: center;
     }
-    .contact-left ,.contact-Right{
+
+    .Resume button {
+        width: 150px;
+        padding: 10px 0;
+        font-size: 20px;
+    }
+
+    .contact-left,
+    .contact-Right {
         flex-basis: 100%;
-
     }
-    .copyright{
-        font-size: 15px;
-    }
-    .headng-left{
 
+    .copyright {
+        font-size: 14px;
+    }
+
+    /* Ensure project images look good */
+    .project-list {
+        grid-template-columns: 1fr;
+    }
+
+    .project img {
+        width: 100%;
+        height: auto;
     }
 }
